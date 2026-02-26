@@ -3,33 +3,16 @@ description: AI协作创作的历史小说
 author: AI Writing Team
 theme: minima
 
-# GitHub Pages 配置
+# Jekyll 配置
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
 highlighter: rouge
 permalink: pretty
 
-# 目录配置
-collections:
-  chapters:
-    output: true
-    permalink: /chapters/:name/
-
-# 默认配置
-defaults:
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: default
-  - scope:
-      path: "卷一"
-      type: pages
-    values:
-      layout: default
-      volume: "卷一"
-  - scope:
-      path: "卷二"
-      type: pages
-    values:
-      layout: default
-      volume: "卷二"
+# GitHub Pages 需要这些
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - minima
