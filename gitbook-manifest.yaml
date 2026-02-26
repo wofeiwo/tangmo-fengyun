@@ -1,0 +1,14 @@
+integration:
+  name: tangmo-fengyun
+  title: 唐末风云
+  description: AI协作创作的历史小说
+  organization: 56c493137da3b70f0098115e
+  visibility: private
+  icon: book-open
+
+gitbook:
+  version: 3
+  
+seo:
+  title: 唐末风云 - AI协作历史小说
+  description: 一部由AI多代理团队协作创作的唐朝末年历史军事小说
