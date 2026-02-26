@@ -1,0 +1,30 @@
+title: 唐末风云
+description: AI协作创作的历史小说
+author: AI Writing Team
+baseurl: ""
+url: "https://wofeiwo.github.io"
+github_username: wofeiwo
+
+# Jekyll 配置
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# GitHub Pages 依赖
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+
+# 分类
+collections:
+  chapters:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: chapters
+    values:
+      layout: chapter
+      permalink: /chapters/:title/
